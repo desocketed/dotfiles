@@ -1,0 +1,7 @@
+# Machine-local extra Emacs Lisp packages from nixpkgs, for Doom.
+# Copy this file to local.nix next to default.nix (gitignored, never committed) to add packages
+# that need to come from nixpkgs rather than a `package!' declaration, e.g.
+# treesit grammars.
+epkgs: [
+  # epkgs.treesit-grammars.with-all-grammars
+]

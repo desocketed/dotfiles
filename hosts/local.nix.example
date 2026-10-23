@@ -1,0 +1,40 @@
+{ pkgs, ... }: {
+  # Absolute path of this checkout. Required: mutable files (Doom, Niri config)
+  # are linked into it so edits apply without a rebuild.
+  modules.dotfiles.dir = "/home/you/dotfiles";
+
+  # Required: who you are on this machine.
+  modules.dotfiles.username = "you";
+  # modules.dotfiles.homeDirectory = "/home/you"; # default
+  # modules.dotfiles.timezone = "Europe/Berlin"; # status bar clock, default UTC
+
+  # Niri output names of the external monitors (see `niri msg outputs`).
+  # modules.dotfiles.monitors = {
+  #   main = "ABC Vendor Model SERIAL-A";
+  #   side = "ABC Vendor Model SERIAL-B";
+  # };
+
+  # Optional Cachix binary cache to pull from and push to.
+  # modules.dotfiles.cachix = {
+  #   name = "your-cache";
+  #   publicKey = "base64-key-from-cachix";
+  # };
+
+  programs.git = {
+    settings = {
+      user.name = "Your Name";
+      user.email = "you@example.com";
+    };
+  };
+
+  # Private: only machines with this file get mail
+  modules.email = {
+    enable = true;
+    name = "Your Name";
+    address = "you@example.com";
+  };
+
+  home.packages = with pkgs; [
+    # extra machine-local packages
+  ];
+}

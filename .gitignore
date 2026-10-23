@@ -1,0 +1,31 @@
+# -*- mode: gitignore; -*-
+
+.selected-profile
+
+#+BEGIN MINE
+.stignore
+.doom.d/config.el
+.emacs.profiles.d/*/local.el
+eln-cache
+local.el
+local-packages.el
+custom.el
+local.nix
+modules/wm/niri/local.kdl
+modules/wm/niri/workspaces.kdl
+.config/home-manager/home.nix
+#+END MINE
+
+#+BEGIN emacs
+*.elc
+
+# Packaging
+.cask
+
+# Backup files
+*~
+
+# Undo-tree save-files
+*.~undo-tree
+#+END gitignore
+.claude/
