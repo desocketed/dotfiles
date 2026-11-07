@@ -1,0 +1,25 @@
+gestures {
+  hot-corners {
+    off
+  }
+}
+hotkey-overlay {
+  skip-at-startup
+}
+switch-events {
+  lid-close { spawn "systemctl suspend"; }
+}
+
+input {
+  touchpad {
+      tap
+      dwt // disable-when-typing
+      natural-scroll
+  }
+  warp-mouse-to-focus mode="center-xy"
+  focus-follows-mouse max-scroll-amount="0%"
+
+  tablet {
+    left-handed
+  }
+}

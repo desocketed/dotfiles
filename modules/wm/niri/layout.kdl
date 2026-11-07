@@ -1,0 +1,26 @@
+layout {
+  // background-color "#0D0014"
+  gaps 0
+  center-focused-column "never"
+  always-center-single-column
+  focus-ring {
+    width 0
+    active-color "#ffc87f"
+    inactive-color "#505050"
+  }
+  border {
+    width 4
+    active-color "#3E0064"
+    inactive-color "#1E0031"
+  }
+  tab-indicator {
+    corner-radius 4
+    gaps-between-tabs 4
+    place-within-column
+    width 4
+    gap 0
+    length total-proportion=0.1
+    active-color "#9E00FF"
+    inactive-color "#2f004c"
+  }
+}

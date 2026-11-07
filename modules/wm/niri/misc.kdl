@@ -1,0 +1,11 @@
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+xwayland-satellite {}
+spawn-sh-at-startup "niri-shake-cursor"
+overview {
+  backdrop-color "#111111"
+}
+cursor {
+  hide-when-typing
+  xcursor-size 24
+}

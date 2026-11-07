@@ -1,0 +1,18 @@
+;; -*- no-byte-compile: t; -*-
+;;; $DOOMDIR/local-packages.el
+
+;; Machine-local package declarations. Copy this file to local-packages.el
+;; (gitignored, never committed) and add `package!' forms here for packages
+;; you don't want in the shared dotfiles repo, e.g. work-only packages.
+;;
+;; It's loaded automatically from packages.el via
+;; (load! "local-packages" nil t), which silently does nothing if
+;; local-packages.el doesn't exist.
+;;
+;; (package! some-private-package)
+;;
+;; Personal packages from your own repositories:
+;; (package! my-package :recipe (:host github :repo "owner/my-package" :branch "main"))
+;; (package! other-package :recipe (:host nil :repo "https://codeberg.org/owner/other-package"))
+;; (when (string= (system-name) "desktop")
+;;   (package! home-package :recipe (:host github :repo "owner/home-package")))
