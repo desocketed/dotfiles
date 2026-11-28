@@ -1,0 +1,24 @@
+workspace "Q" {
+  open-on-output "ABC Vendor Model SERIAL-A"
+}
+workspace "W" {
+  open-on-output "ABC Vendor Model SERIAL-A"
+}
+workspace "E" {
+  open-on-output "ABC Vendor Model SERIAL-A"
+}
+workspace "R" {
+  open-on-output "ABC Vendor Model SERIAL-A"
+}
+workspace "A" {
+  open-on-output "ABC Vendor Model SERIAL-B"
+}
+workspace "S" {
+  open-on-output "ABC Vendor Model SERIAL-B"
+}
+workspace "D" {
+  open-on-output "ABC Vendor Model SERIAL-B"
+}
+workspace "F" {
+  open-on-output "ABC Vendor Model SERIAL-B"
+}

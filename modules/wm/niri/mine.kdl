@@ -1,0 +1,13 @@
+include "mine/binds.kdl"
+include "mine/input.kdl"
+include "mine/layout.kdl"
+include "mine/rules.kdl"
+// include "mine/workspaces.kdl"
+include "mine/misc.kdl"
+// include optional=true "outputs.kdl"
+// Written by other modules that add binds or rules (apps/homun)
+// Written by the swaylock module on hosts that lock
+include optional=true "mine/lock.kdl"
+include optional=true "mine/extra.kdl"
+include optional=true "local.kdl"
+include optional=true "mine/local.kdl"

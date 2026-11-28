@@ -1,0 +1,19 @@
+[package]
+name = "novamix-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+novamix.workspace = true
+
+anyhow.workspace = true
+clap.workspace = true
+crossbeam-channel.workspace = true
+dirs.workspace = true
+env_logger.workspace = true
+hidapi.workspace = true
+log.workspace = true
+pipewire.workspace = true
+regex.workspace = true
+toml.workspace = true

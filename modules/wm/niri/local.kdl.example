@@ -1,0 +1,7 @@
+// Machine-local niri config, gitignored as local.kdl and included from mine.kdl.
+// Output names come from `niri msg outputs`.
+input {
+  tablet {
+    map-to-output "ABC Vendor Model SERIAL-A";
+  }
+}

@@ -1,0 +1,118 @@
+// Focus stealing
+window-rule {
+  match app-id=".*"
+  open-focused false
+}
+window-rule {
+  match app-id="^emacs$"
+  match app-id="^kitty$"
+  match app-id="^org.wezfurlong.wezterm$"
+  match app-id="^zen$"
+  match app-id="^org.gnupg.pinentry-qt$"
+  open-focused true
+}
+// Floating windows
+window-rule {
+  match title="float"
+  open-floating true;
+}
+window-rule {
+  match app-id="org.gnome.Nautilus"
+  open-floating true
+}
+window-rule {
+  match app-id="wev"
+  open-floating true
+}
+window-rule {
+  match app-id="re.sonny.Junction"
+  open-floating true
+  open-focused true
+}
+// File pickers ("Attach files", "Open", "Save as")
+window-rule {
+  match app-id="xdg-desktop-portal-gtk"
+  open-floating true
+}
+// Chat
+window-rule {
+  match app-id="equibop";
+  match app-id="discord";
+  match app-id="SchildiChatAlpha";
+  match app-id="org.gnome.Fractal";
+  open-on-workspace "F";
+}
+// Games: Triforce (Ocarina of Time) on W, focused, with a bright border so a black window still shows its edges
+window-rule {
+  match app-id="^io\\.github\\.NotRexed\\.Hookshot$";
+  open-on-workspace "W";
+  open-focused true;
+  border {
+    on;
+    width 4;
+    active-color "#ffc87f";
+    inactive-color "#806040";
+  }
+}
+// Launchers
+window-rule {
+  match app-id="net.lutris.Lutris";
+  open-on-workspace "W";
+  default-column-width { proportion 0.3; }
+}
+window-rule {
+  match app-id="steam";
+  open-on-workspace "W";
+  open-floating true;
+}
+window-rule {
+  match app-id="steam"
+  open-floating true;
+}
+window-rule {
+  match app-id="steam" title="^Steam$";
+  match app-id="steam" title="^Steam Games List$";
+  default-column-width { proportion 0.3; }
+  max-width 2040; // (2560 * 0.8) - border-gap*2
+  open-floating false;
+}
+window-rule {
+  match app-id="steam" title="^Friends List$";
+  default-column-width { proportion 0.2; }
+  min-width 504; // (2560 * 0.2) - border-gap*2
+  max-width 504;
+  open-floating false;
+}
+// Cast target
+window-rule {
+  match is-window-cast-target=true
+  focus-ring {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+  border {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+  shadow {
+    color "#7d0d2d70"
+  }
+  tab-indicator {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+}
+
+window-rule {
+  match app-id="com.danklinux.dms" title="Authentication"
+  open-focused true
+}
+
+// Homun's lab windows float top right
+window-rule {
+  match app-id="homun-lab-view"
+  match app-id="homun-lab-session"
+  open-floating true
+  default-floating-position x=32 y=32 relative-to="top-right"
+  default-column-width { fixed 520; }
+}

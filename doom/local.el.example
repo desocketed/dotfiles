@@ -1,0 +1,4 @@
+;;; local.el --- machine-specific settings, gitignored  -*- lexical-binding: t; -*-
+;; Copy to local.el; config.el loads it last.
+
+(setq hass-host "192.0.2.10")

@@ -1,0 +1,15 @@
+[package]
+name = "novamix-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "novamix"
+path = "src/main.rs"
+
+[dependencies]
+novamix.workspace = true
+
+anyhow.workspace = true
+clap.workspace = true
